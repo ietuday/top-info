@@ -1,0 +1,15 @@
+<div>
+    <mat-card style="margin:15%">
+        <form>
+            <div fxLayout="column">
+            <mat-form-field fxFlex="100">
+              <input matInput placeholder="WithDraw Amount">
+            </mat-form-field>
+            <div style="text-align: right;">
+                <button mat-raised-button mat-button-sm color="primary" type="submit">Next</button>
+                <button mat-raised-button mat-button-sm  color="accent" (click)="cancel()" type="button">Cancel</button>
+            </div>
+            </div>
+          </form>
+    </mat-card>
+</div>

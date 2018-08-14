@@ -1,0 +1,21 @@
+<div>
+<mat-card style="margin:15%">
+    <mat-card-header>
+         <mat-card-title class="cardHeader">Account Detail</mat-card-title>
+    </mat-card-header>
+    <form [formGroup]="form" (ngSubmit)="login()">
+        <div fxLayout="column">
+        <mat-form-field fxFlex="100">
+          <input matInput placeholder="Card Number" formControlName="cardNumber">
+        </mat-form-field>
+      
+        <mat-form-field fxFlex="100">
+            <input matInput placeholder="PIN" formControlName="pin">
+          </mat-form-field>
+          <div style="text-align: right;">
+                <button mat-raised-button mat-button-sm [disabled]="!form.valid" color="primary" type="submit">Next</button>
+          </div>
+        </div>
+      </form>
+</mat-card>
+</div>
